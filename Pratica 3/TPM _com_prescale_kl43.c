@@ -1,7 +1,3 @@
-/**
- * @file    TPMSDK.c
- * @brief   Application entry point.
- */
 #include <stdio.h>
 #include "board.h"
 #include "peripherals.h"
@@ -11,9 +7,6 @@
 #include "fsl_debug_console.h"
 #include "fsl_tpm.h"
 #include "fsl_port.h"
-/* TODO: insert other include files here. */
-
-/* TODO: insert other definitions and declarations here. */
 
 void TPM0_IRQHandler(void){
 	if((TPM_GetStatusFlags(TPM0) & kTPM_TimeOverflowFlag) != 0)
@@ -49,7 +42,6 @@ int main(void) {
 	while(1){
 
 	}
-
 
 	return 0 ;
 }
