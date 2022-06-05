@@ -21,7 +21,6 @@ int main(void) {
 		1
 	};
 
-	// Ativando o clock da PORTA_E
 	CLOCK_EnableClock(kCLOCK_PortE);
 	PORT_SetPinMux(PORTE, 31, kPORT_MuxAsGpio);
 	GPIO_PinInit(GPIOE, 31, &gpioLed);
